@@ -1,0 +1,56 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url("../pics/bg.jpg") no-repeat;
+  background-size: cover;
+}
+.login-box{
+  width: 280px;
+  position: absolute;/*The positioning is done relative to the first relatively (or absolutely) positioned parent element. In the case when there is no positioned parent element, it will be positioned related directly to the HTML element*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); /*Changing position, rotation of html elements https://www.youtube.com/watch?v=zL_5n5F1xcY*/
+  color: white;
+}
+.login-box h1{
+  float: left; /*The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.*/
+  font-size: 40px;
+  border-bottom: 6px solid #4caf50;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden; /*By default, the content will remain visible outside of the parent element’s bounds. With the overflow property, I can decide how to handle that overflowing content, in short so that some pics don't clip (hidden,scroll, auto)*/
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.btn{
+  width: 100%;
+  background: none;
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+}
